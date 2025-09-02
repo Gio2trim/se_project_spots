@@ -1,0 +1,18 @@
+.footer {
+  background-color: #fcf5e5;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  padding: 60px 0;
+  border-top: 1px solid #21212166;
+}
+
+.footer__content {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1; /* 100% = 1 */
+  letter-spacing: 0;
+  color: #212121b2;
+}

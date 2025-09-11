@@ -13,4 +13,4 @@ HTML, CSS and Responsive design
 ## Deployment
 
 This webpage is deployed to github pages
-Deployment link -
+Deployment link - https://gio2trim.github.io/se_project_spots/

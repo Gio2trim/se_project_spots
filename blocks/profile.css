@@ -2,32 +2,34 @@
   display: flex;
   padding: 34px 0 20px;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
-  align-items: flex-end;
-  justify-content: space-between; /* Push name/desc to top, button to bottom */
-  height: 200px;
 }
 
 .profile__avatar {
   margin-right: 20px;
   height: 190px;
   width: 190px;
+  border-radius: 8px;
 }
 
 .profile__column {
   display: flex;
+  position: relative;
   flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
   margin-right: 20px;
-  justify-content: space-between;
-  height: 100%;
 }
 
 .profile__edit-btn {
-  margin-top: auto;
   background: none;
   border: none;
+  font-weight: 500;
+  size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
   padding: 0;
-  font: inherit;
-  color: inherit;
+  font: "Poppins, sans-serif";
+  color: #212121;
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -35,14 +37,18 @@
 }
 
 .profile__edit-btn:hover {
-  color: black;
-  font-weight: 700; /* bold */
-  transition: color 0.3s ease, font-weight 0.3s ease;
+  opacity: 70%;
+  transition: opacity 0.3s ease;
 }
 
 .profile__name {
   margin: 0 0 12px;
-  font-weight: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 32px;
+  line-height: 100%:
+  font-weight: 500;
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
@@ -52,7 +58,13 @@
 }
 
 .profile__description {
-  margin: 0;
+  margin: 0 0 18px 0;
+  color: #212121B2;
+  font: "poppins, sans-serif";
+  font-weight: 500;
+  line-height: 100%;
+  size: 16px;
+  letter-spacing: 0%;
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
@@ -63,6 +75,7 @@
 
 .profile__add-btn {
   margin-left: auto;
+  transition: background-color 0.3s ease;
   width: 149px;
   height: 52px;
   padding: 0 32px;
@@ -71,17 +84,14 @@
   color: white;
   border: none;
   border-radius: 8px;
-  display: inline-flex;
-  align-items: center;
   cursor: pointer;
   font: inherit;
-  flex-direction: row;
   white-space: nowrap;
+  align-self: end;
 }
 
 .profile__add-btn:hover {
-  background-color: #555555;
-  transition: background-color 0.3s ease;
+  opacity: 40%;
 }
 
 @media screen and (max-width: 627px) {

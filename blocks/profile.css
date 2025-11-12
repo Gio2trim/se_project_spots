@@ -1,5 +1,9 @@
 .profile {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: auto;
+  gap: 20px;
   padding: 34px 0 20px;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
@@ -13,11 +17,11 @@
 
 .profile__column {
   display: flex;
-  position: relative;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-start;
-  margin-right: 20px;
+  margin-right: 0px;
+  height: 190px;
 }
 
 .profile__edit-btn {
@@ -34,6 +38,8 @@
   align-items: center;
   gap: 4px;
   cursor: pointer;
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 .profile__edit-btn:hover {
@@ -42,25 +48,24 @@
 }
 
 .profile__name {
-  margin: 0 0 12px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin: 0 0 12px 0;
   font-size: 32px;
-  line-height: 100%:
+  line-height: 1.2;
   font-weight: 500;
+  white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   max-width: 420px;
 }
 
 .profile__description {
-  margin: 0 0 18px 0;
-  color: #212121B2;
-  font: "poppins, sans-serif";
+  margin: 0;
+  margin-bottom: 0;
+  color: #212121b2;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   line-height: 100%;
   size: 16px;
@@ -104,29 +109,38 @@
   }
 
   .profile__avatar {
-    margin-right: 0;
+    margin-right: 0 0 12px 0;
     height: 80px;
     width: 80px;
     margin-bottom: 12px;
   }
   .profile__name {
     font-size: 20px;
-    margin-bottom: 6px;
+    margin: 0 0 6px 0;
     max-width: 288px;
+    white-space: nowrap;
   }
 
   .profile__description {
-    margin: 0 0 32px;
+    margin: 0 0 20px 0;
     font-size: 16px;
     max-width: 288px;
   }
 
   .profile__column {
-    margin: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+  }
+
+  .profile__edit-btn {
   }
 
   .profile__add-btn {
     margin: 0;
     max-width: 100%;
+    width: 100%;
   }
 }
